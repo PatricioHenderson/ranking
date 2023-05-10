@@ -10,19 +10,25 @@ body {
   font-family: 'Open Sans', sans-serif;
   
 }
+
+.leaderboard-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
 /*-------------------- Leaderboard --------------------*/
+
+
 .leaderboard {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
   width: 90%;
-  height: 80%;
   max-width: 450px;
   max-height: 370px;
   background: linear-gradient(to bottom, #3a404d, #181c26);
   border-radius: 10px;
   box-shadow: 0 7px 30px rgba(62, 9, 11, .3);
+  margin-top: 5vh;
 }
 .leaderboard h1 {
   font-size: 18px;
@@ -52,6 +58,7 @@ body {
   max-height: 70%;
   margin-right: 2px;
   overflow-y: auto;
+  overflow-x: hidden;
 }
 .leaderboard ol li {
   position: relative;
@@ -264,21 +271,23 @@ body {
 }
 
 
+/* @media screen and (max-width: 1000px) {
+
+  .leaderboard {
+    margin: 10vh;
+  }
+  .logo_casablanca img {
+    max-width: 100%;
+  }
+  
+
+} */
+
 @media screen and (max-width: 1000px) {
 
-  /* .logo_casablanca {
-    position: fixed;
-    z-index: 1;
-    bottom: 0;
-    left: 50%;
-    transform: translateX(-50%);
-    width: 50vw;
-    max-width: 200px;
-    padding: 10px;
-    } */
-
-    .logo_casablanca img {
-  max-width: 100%;
+  .logo_casablanca img {
+    max-width: 100%;
+  }
 }
 
-}
+
